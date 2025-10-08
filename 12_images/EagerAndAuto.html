@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eager And Auto</title>
+</head>
+<body>
+
+	<img src="images/NorawFlg.png" alt="Norway Flag" title="The norway Flag"  loading="eager" width="250" height="250">
+	
+	<img src="images/Oslo.png" alt="oslo city" title="oslo city"  loading="eager"  width="250" height="250"> 
+	
+		<!-- Forces the browser to load the element immediately  -->
+
+
+
+	<pre>
+
+
+
+		Any thing
+
+
+	</pre>
+
+
+	<img src="images/Tromso.png" alt="Tromso City" title="oslo img with lazy loading" loading="lazy" width="250" height="250" >
+
+
+	
+</body>
+</html>
+
+<!--	
+
+	The loading attribute has three possible values :
+		* lazy: This value tells the browser to delay loading the element until it reaches a calculated distance from the viewport, 
+			thereby prioritizing visible content
+		
+		* eager: Forces the browser to load the element immediately, regardless of where it appears on the page
+
+		* auto: The browser uses its default loading strategy. 
+			This could involve immediate loading as soon as the element is parsed (similar to the traditional behavior without lazy loading), 
+			or it might incorporate some optimizations based on the user's connection speed, browser settings, and other fac
+
+
+
+
+	Best Practices:
+
+		•Use loading="eager" for critical images that are in the first viewport or near the top of the page.
+		•Apply loading="lazy" to images and iframes that are below the fold or not immediately necessary.
+		•Test your webpage's performance with different loading strategies to find the optimal setup for your content and audience
+
+	
+
+
+
+		loading="auto" ?? 
+
+			loading="auto" leaves the decision up to the browser's loading algorithm, 
+			which might not always implement lazy loading.
+
+
+
+-->
