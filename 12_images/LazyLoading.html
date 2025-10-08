@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lazy Loading ...</title>
+</head>
+<body>
+
+	<img src="images/NorawFlg.png" alt="Norway Flag" title="The norway Flag" width="250" height="250">
+	<img src="images/Oslo.png" alt="oslo city" title="oslo city" width="250" height="250">
+
+
+
+	<pre>
+
+
+
+		Any thing
+
+
+	</pre>
+
+
+	<img src="images/Tromso.png" alt="Tromso City" title="oslo img with lazy loading" loading="lazy" width="250" height="250" >
+
+	
+</body>
+</html>
+
+
+<!--
+	The loading="lazy" attribute in HTML is a native browser feature that enables lazy loading of images and iframes
+
+
+	This functionality is crucial for improving page load times, reducing resource consumption, 
+	and enhancing user experience by deferring the loading of non-critical, 
+	off-screen resources until they are needed
+
+
+
+	Lazy Loading: Lazy loading is a design pattern aimed at delaying the initialization 
+	or loading of resources until they are actually needed.
+
+
+
+		How It Works ?
+
+	When an <img> or <iframe> element includes the loading="lazy" attribute, 
+	the browser will not load the resource when the page initially loads.Instead, 
+	it will wait until the user scrolls near the place where the element is located. 
+	This helps in reducing initial page load time, saves bandwidth, and improves the performance of the webpage
+
+
+
+
+
+	Use loading="lazy" for images and iframes that are below the fold.
+	•Ensure that critical images that appear above the fold are not lazy-loaded, as this could delay their visibility.
+	•Use loading=“lazy” for:
+		•For images that are rarely viewed by users.
+		•For images in a hidden tab.
+		•For images that appear at the bottom of the webpage.
+	
+
+	Q/A:
+
+		When should you NOT use loading="lazy" for images?
+			
+			For images that are critical and appear above the fold.
+
+		When should you use loading="lazy" for images?
+
+			correctFor images that appear at the bottom of the webpage.
+			For images that are rarely viewed by users.
+			For images in a hidden tab.
+	
+	
+		When an < img > or < iframe > element includes the loading="lazy" attribute, 
+		the browser will not load the resource when the page initially loads. 
+		Instead, it will wait until the user scrolls near the place where the element is located. 
+		This helps in reducing initial page load time, saves bandwidth, 
+		and improves the performance of the webpage
+
+			true 
+
+
+
+-->
