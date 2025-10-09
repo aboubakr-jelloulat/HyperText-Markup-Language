@@ -3,50 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>IFrame</title>
+	<title>IFrame Examples</title>
 </head>
 <body>
 
-	
-	<p>	 Default Borders	</p>
+	<h2>Page with IFrames</h2>
 
-	<iframe src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT91a6Eq6LQwq73D-rViWSo_-Px8T4drtJdJQxnwACQRLSTmo2lcP_lkBLroBPyRrFu-6VamXAcChV8jhPlAfXInQ09HmZmph20taM5_o0" title="Default Border"></iframe>
+	<!-- Simple iframe -->
+	<p>1. Learn C++ Page</p>
+	<iframe 
+		src="https://www.learncpp.com/" 
+		title="Learn C++ Website"
+		frameborder="0"
+		width="500" 
+		height="400"
+		loading="lazy">
+	</iframe>
 
+	<!-- Default border iframe -->
+	<p>2. Default Borders</p>
+	<iframe 
+		src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT91a6Eq6LQwq73D-rViWSo_-Px8T4drtJdJQxnwACQRLSTmo2lcP_lkBLroBPyRrFu-6VamXAcChV8jhPlAfXInQ09HmZmph20taM5_o0" 
+		title="Default Border Image"
+		width="500" 
+		height="400"
+		loading="lazy">
+	</iframe>
 
-	<p><br><br> Border style with red </p>
+	<!-- Red border iframe -->
+	<p>3. Red Border</p>
+	<iframe 
+		src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRkMYuHDZbIMweIAssJEoOrU2rravDH6r_H8u4mVqM_RuvHnpX5aRX-RvvHhZbtxje-P_1ZEDwjcdD32siW09LHhCAXox2b9YJtqHGsp-0" 
+		title="Red Border Image"
+		width="500" 
+		height="400"
+		style="border: 3px solid red;"
+		loading="lazy">
+	</iframe>
 
-	<iframe style="color: red;"
-		src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRkMYuHDZbIMweIAssJEoOrU2rravDH6r_H8u4mVqM_RuvHnpX5aRX-RvvHhZbtxje-P_1ZEDwjcdD32siW09LHhCAXox2b9YJtqHGsp-0" title="Border style with red"></iframe>
+	<!-- Custom width and height -->
+	<p>4. Changing Width and Height</p>
+	<iframe 
+		src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT91a6Eq6LQwq73D-rViWSo_-Px8T4drtJdJQxnwACQRLSTmo2lcP_lkBLroBPyRrFu-6VamXAcChV8jhPlAfXInQ09HmZmph20taM5_o0" 
+		title="Custom Size Image"
+		width="500" 
+		height="600"
+		style="border: 2px solid red;"
+		loading="lazy">
+	</iframe>
 
-	
+	<!-- No border iframe -->
+	<p>5. No Border</p>
+	<iframe 
+		src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRkMYuHDZbIMweIAssJEoOrU2rravDH6r_H8u4mVqM_RuvHnpX5aRX-RvvHhZbtxje-P_1ZEDwjcdD32siW09LHhCAXox2b9YJtqHGsp-0" 
+		title="No Border Image"
+		style="border: none;"
+		width="900" 
+		height="700"
+		loading="lazy">
+	</iframe>
 
-
-
-		
-	<p>	<br><br> changing With and Height	</p>
-
-	<iframe src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT91a6Eq6LQwq73D-rViWSo_-Px8T4drtJdJQxnwACQRLSTmo2lcP_lkBLroBPyRrFu-6VamXAcChV8jhPlAfXInQ09HmZmph20taM5_o0" 
-		title="changing With and Height" width="500" height="600"
-		style="border: 2px solid red;"></iframe>
-
-
-	<p><br><br> No border </p>
-
-	<iframe src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRkMYuHDZbIMweIAssJEoOrU2rravDH6r_H8u4mVqM_RuvHnpX5aRX-RvvHhZbtxje-P_1ZEDwjcdD32siW09LHhCAXox2b9YJtqHGsp-0" 
-	title="No border" style="border: none;" height="700" width="900" ></iframe>
-
-
-
-	<p> <br> <br>  Embedding Video  </p>
-
-	<iframe width="560" height="315" 
-	src="https://www.youtube.com/embed/_zQqN5OYCCM?si=JlrrXR17mealo5Ld&amp;controls=0" 
-	title="YouTube video player" 
-	frameborder="0" 
-	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+	<!-- Embedded YouTube video -->
+	<p>6. Embedding Video</p>
+	<iframe
+		src="https://www.youtube.com/embed/_zQqN5OYCCM?si=JlrrXR17mealo5Ld&amp;controls=0" 
+		title="YouTube Video Player"
+		width="560" 
+		height="315"
+		frameborder="0"
+		loading="lazy"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" 
+		allowfullscreen>
+	</iframe>
 
 </body>
 </html>
