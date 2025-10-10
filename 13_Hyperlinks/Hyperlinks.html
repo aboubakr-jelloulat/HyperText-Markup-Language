@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hyperlinks</title>
+    <style>
+        body 
+		{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 
+		{
+            color: #ff6600;
+        }
+		h2
+		{
+			color:sienna;
+		}
+
+    </style>
+</head>
+
+
+<body style="background-color: antiquewhite;" >
+
+
+    
+    <h1>HTML Hyperlinks </h1>
+    <p>Welcome to this comprehensive lesson on HTML hyperlinks! Learn how to create different types of links.</p>
+
+    <hr>
+
+
+    <!-- SECTION 1: BASIC LINK -->
+    
+    <h2>1. Basic Link</h2>
+    
+    <p>
+        To learn more about our school, 
+        <a href="https://www.42network.org/" title="Learn more about our school">click here</a>.
+    </p>
+    
+    <p>Thank you!</p>
+
+    <br><br>
+
+	
+
+    <!-- 
+         SECTION 2: OPEN LINK IN NEW TAB
+     -->
+    
+    <h2>2. Open Page in a New Browser Tab</h2>
+    
+    <p>
+        To learn more about our Company, 
+        <a href="https://www.ericsson.com/en" title="Ericsson link" target="_blank">Ericsson</a>
+    </p>
+    
+    <!-- The target="_blank" attribute opens the link in a new tab -->
+
+    <br><br>
+
+
+    <!-- 
+         SECTION 3: IMAGE AS LINK
+    -->
+    
+    <h2>3. Use an Image as a Link</h2>
+    
+    <p>Use my image logo to go to Ericsson website:</p>
+    
+    <br>
+    
+    <a href="https://www.ericsson.com/en" title="Ericsson setweb" target="_blank">
+        <img src="images/Tilt Shift.jpeg" alt="Ericsson Logo" title="Set web ericsson company logo" height="100" width="100">
+    </a>
+
+	<br>
+
+	<p>Use my image logo to go to 42 The Network website:</p>
+
+	<a href="https://www.42network.org/" 
+		title="42 setweb" 
+		target="_blank">
+		<img src="images/download.png" 
+        alt="42 logo" 
+        style="width:15%; height:auto;">
+</a>
+
+    
+    <!-- You can wrap an <img> tag inside an <a> tag to make images clickable -->
+
+    <br><br><br>
+
+
+    <!--
+         SECTION 4: RELATIVE PATH TO LOCAL PAGE
+     -->
+    
+    <h2>4. Linking to Relative Page (Relative Path)</h2>
+    
+    <p>
+        Go to login form: 
+        <a href="pages/loginAnimition.html" target="_blank">Login Form</a>
+    </p>
+
+    <br><br>
+
+
+    <!-- 
+         SECTION 5: ANOTHER RELATIVE PATH EXAMPLE
+     -->
+    
+    <h2>5. Relative Path Navigation</h2>
+    
+    <p>
+        Go to Ericsson form: 
+        <a href="pages/ericsson.html" title="ericsson resume" target="_blank">Ericsson Resume</a>
+    </p>
+
+    <br><br>
+
+
+    <!-- 
+         SECTION 6: EMAIL LINK
+     -->
+    
+    <h2>6. Linking to an Email Address</h2>
+    
+    <p>
+        This functionality allows users to click a link that opens their default email client with<br>
+        pre-filled recipient addresses, subject lines, and even body text.
+    </p>
+    
+    <br>
+    
+    <p>
+        <b>Linking Email Address:</b><br>
+        Email us at <a href="mailto:abubakerjelloulat@gmail.com">our email</a>
+    </p>
+    
+    <br>
+    
+    <p>
+        <b>Advanced Usage:</b><br>
+        <a href="mailto:abubakerjelloulat@gmail.com?cc=ceoofericsson@gmail.com&bcc=ceoofericsson@gmail.com&subject=Investing in KSA telecom?">
+            Send a Detailed Email
+        </a>
+    </p>
+    
+    <!-- 
+        The mailto: protocol opens the default email client
+        
+        Parameters you can use:
+        - cc: Adds a carbon copy recipient
+        - bcc: Adds a blind carbon copy recipient (hidden from other recipients)
+        - subject: Prefills the subject line
+        - body: Prefills the email body text
+    -->
+
+    <br><br>
+
+
+    <!-- 
+         SECTION 7: PHONE NUMBER LINK
+     -->
+    
+    <h2>7. Linking to a Phone Number</h2>
+    
+    <p>
+        <a href="tel:+212767667227" title="our phone number">
+            <b>📞 Call us</b>
+        </a>
+    </p>
+    
+    <!-- The tel: protocol opens the phone dialer on mobile devices -->
+
+    <br><br>
+
+
+    <!--
+         SECTION 8: DOWNLOAD LINKS
+     -->
+    
+    <h2>8. Linking to Document</h2>
+    
+    <p>
+        You can download the document "Mastering C++ Pointers: From Fundamentals to Advanced Techniques": 
+        <a href="Documents/Mastering_CPP_Pointers copy.pdf" download title="Mastering C++ Pointers: From Fundamentals to Advanced Techniques">
+            Download Mastering C++ Pointers Document
+        </a>
+    </p>
+    
+    <br>
+    
+    <p>
+        You can download file.rar: 
+        <a href="Documents/package.rar" download>RAR package</a>
+    </p>
+    
+    <!-- The download attribute forces the browser to download the file instead of opening it -->
+
+    <br><br>
+
+
+    <!-- 
+         SECTION 9: ANCHOR LINKS (SAME PAGE NAVIGATION)
+     -->
+    
+    <h2 id="Lorem Ipsum">9. Lorem Ipsum Text - Anchor Links</h2>
+    
+    <p>Click on a section below to jump to it:</p>
+    
+    <div>
+        <p><a href="#What is Lorem Ipsum?">Section 1: What is Lorem Ipsum?</a></p>
+        <p><a href="#Why do we use it?">Section 2: Why do we use it?</a></p>
+        <p><a href="#Where can I get some?">Section 3: Where can I get some?</a></p>
+    </div>
+
+    <br><br><br>
+
+
+    <!-- 
+        WHAT IS LOREM IPSUM?
+    -->
+    
+    <div>
+        <h4 style="font-family: 'Merriweather', serif;" id="What is Lorem Ipsum?">
+            What is Lorem Ipsum?
+        </h4>
+        
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        
+        <p><a href="#Lorem Ipsum">⬆ Go to Top</a></p>
+    </div>
+
+    <br><br>
+
+
+    <!-- WHY DO WE USE IT-->
+    
+    <div>
+        <h4 style="font-family: 'Merriweather', serif;" id="Why do we use it?">
+            Why do we use it?
+        </h4>
+        
+        <p>
+            It is a long established fact that a reader will be distracted by the<br>
+            readable content of a page when looking at its layout. The point of<br>
+            using Lorem Ipsum is that it has a more-or-less normal distribution<br>
+            of letters, as opposed to using 'Content here, content here',<br>
+            making it look like readable English. Many desktop publishing<br>
+            packages and web page editors now use Lorem Ipsum as their default model text...
+        </p>
+        
+        <p><a href="#Lorem Ipsum">⬆ Go to Top</a></p>
+    </div>
+
+    <br><br>
+
+
+    <!-- SECTION 9.3: WHERE CAN I GET SOME? -->
+    
+    <div>
+        <h4 style="font-family: 'Merriweather', serif;" id="Where can I get some?">
+            Where can I get some?
+        </h4>
+        
+        <p>
+            There are many variations of passages of Lorem Ipsum available,<br>
+            but the majority have suffered alteration in some form, by injected<br>
+            humour, or randomised words which don't look even slightly<br>
+            believable. If you are going to use a passage of Lorem Ipsum,<br>
+            you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        </p>
+        
+        <p><a href="#Lorem Ipsum">⬆ Go to Top</a></p>
+    </div>
+
+    <br><br>
+
+
+
+
+	<h2> 10 -  tomorrow InshaAllah </h2>
+
+
+
+
+
+
+    <hr>
+    
+    <p style="text-align: center; color: #666;">
+        <i>End of HTML Hyperlinks Lesson</i>
+    </p>
+
+
+
+	
+
+
+</body>
+</html>
