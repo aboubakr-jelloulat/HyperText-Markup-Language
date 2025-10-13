@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inner Content</title>
+</head>
+<body>
+
+  <p>This is the deepset level of nesting . Click bellow to open a link in the Parent frame</p> 
+
+  <p><a href="history.html" >Open GNU History in Current Page </a></p> <!--  !-->
+
+
+	<p><a href="history.html" target="_parent">Open GNU History in Parent Frame</a></p>
+
+
+
+	<p>All targets example : </p>
+
+	<!-- Link will open page1 inside the current page by default target_self -->
+	<p> <strong>target="_self":</strong> <a href="history.html" >Open Page1 in the same window</a></p>
+
+	<!-- Link will open page1 in a new window -->
+	<p>
+		<strong>target="_blank":</strong>
+		<a href="history.html" target="_blank">Open Page1 in new window/tab</a>
+	</p>
+
+	<!-- Link that targets the parent frame, which is nested-iframe.html -->
+	<p>
+		<strong>target="_parent":</strong>
+		<a href="history.html" target="_parent">Open Page1 in Parent Frame</a>
+	</p>
+
+	<!-- Link will open page1 in the top most window in the page.page1 will open in the full body of the window, breaking out of any frameset or iframe. -->
+	<p>
+		<strong>target="_top":</strong>
+		<a href="history.html" target="_top">Open Page1 in the top most window, break out all frames</a>
+
+
+</body>
+</html>
