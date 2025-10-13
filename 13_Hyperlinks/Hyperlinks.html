@@ -314,11 +314,80 @@
 
 
 
-	<h2>11 _Targets In <frame> </h2>
+	<h2>11 _Targets In frame </h2>
 
 	 	<p>This is a small project demonstrating how to open page nested Iframe structure </p>
 
 	 	<a href="Targets/MainPage.html" target="_blank"> Master nested Iframe structure </a>
+
+
+	<!--
+        SECTION 12: Button as Link
+     -->
+	
+	<h2> 12 - Button as Link </h2>
+
+	<p style="color: #ff00bb;">Click the button below to vist Ericsson  :</p>
+
+	
+		<p>
+			<!-- Button redirects to Ericsson website in the same tab -->
+			<button onclick="window.location.href='https://www.ericsson.com/en'">Visit Ericsson</button>
+		</p>
+		
+		<p>
+			<!-- Button opens Ericsson website in a new tab -->
+			<button onclick="window.open('https://www.ericsson.com/en', '_blank')">Visit Ericsson</button>
+		</p>
+		
+		<p>
+			<!-- Button opens Ericsson website in a new window with custom size -->
+			<button onclick="window.open('https://www.ericsson.com/en', 'Ericsson', 'width=400,height=500')">
+				Visit Ericsson
+			</button>
+		</p>
+
+
+
+		<!--
+        	SECTION 13: Button as Link
+    	 -->
+	
+		<h2> 13 - HTML Link Colors </h2>
+
+
+		<p>
+			Vist our <a href="https://www.ericsson.com/en"> Company</a> to get job.
+		</p>
+
+		<br>
+
+			<!-- onmouseover  fash thet lmouse  onmousedown  fach kab9a mclicki  -->
+			
+		<p>
+			Visit our <a href="https://www.ericsson.com/en"
+				style="color: blue;"
+				onmouseover="this.style.color='red'"  
+				onmouseout="this.style.color='blue'"
+				onmousedown="this.style.color='yellow'"  
+				onmouseup="this.style.color='red'"
+
+			
+
+				> Company</a> to get job.
+
+		</p>
+			
+
+
+
+
+
+
+
+
+
+
 
 
 
