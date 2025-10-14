@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rel Attribute Example</title>
+</head>
+<body>
+    <h1>Understanding the Rel Attribute</h1>
+    <p>Here are some examples of the rel attribute in use:</p>
+    
+    <a href="https://www.ericsson.com/en" rel="external nofollow noopener noreferrer" target="_blank">Visit      Ericsson (External, No Follow)
+    </a>
+
+
+<!-- Common Values for the rel Attribute
+Here are some of the most commonly used values for the rel attribute in <a> tags:
+
+1- nofollow:
+
+Usage: Instructs search engines not to follow the link for crawling and indexing.
+Purpose: Often used for user-generated content or paid links to prevent endorsing or passing credibility to the target page.
+
+2-noopener:
+
+Usage: Prevents the new page from accessing the window.opener property and ensures it runs in a separate process.
+Purpose: Enhances security and performance, particularly important when using target="_blank" to open a new tab.
+
+3-noreferrer:
+
+Usage: Same as noopener but also prevents the HTTP referer header from being sent to the new page.
+Purpose: Useful for privacy to ensure that the destination site does not receive information about the source site.
+
+4-external:
+
+Usage: Indicates that the link leads to an external website.
+Purpose: More semantic, informing both users and search engines that the link is external (though not widely used for behavioral control). -->
+
+</body>
+</html>
+
+
+<!-- 
+REL ATTRIBUTES GUIDE
+
+1️⃣ nofollow
+What it is: Tells search engines not to follow this link for SEO ranking purposes.
+Why it matters: Prevents passing SEO credit to untrusted or external sites. Useful for ads or user-generated links.
+
+2️⃣ noopener
+What it is: Security measure used with target="_blank" to prevent the new page from accessing your page via window.opener.
+Why it matters: Protects your page from potential malicious scripts on the new tab.
+			:use to stop the HTTP referer header from being sent along with the request
+
+3️⃣ noreferrer
+What it is: Prevents the browser from sending your page URL (referrer) to the linked site. Often used with noopener.
+Why it matters: Improves privacy and security when opening links in a new tab.
+
+4️⃣ external
+What it is: Indicates the link points to an external website. Mostly semantic or styling purposes.
+Why it matters: Helps screen readers, analytics, or CSS to identify external links.
+-->
