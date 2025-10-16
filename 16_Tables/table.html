@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tables Example</title>
+</head>
+<body>
+
+
+	<!-- Table Structure:
+
+		<table>: The container element for the table.
+		<tr>: Defines a table row.
+		<th>: Stands for "table header"; typically used in the first row or column to indicate what data the cells contain.
+		<td>: Stands for "table data"; used to define the cells in the table that contain data.
+	-->
+
+
+	<h2 style="color: brown;">Employee Information</h2>
+
+	<p style="color: blue;">This is a table:</p>
+
+	<table border="1" width="50%" >
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Job</th>
+			<th>Salary</th>
+		</tr>
+		<tr>
+			<td>Aboubakr</td>
+			<td>21</td>
+			<td>Software Developer</td>
+			<td>1700kr</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<p style="color: blue;">This is an Ericsson department:</p>
+
+	<table border="1" width="50%" cellspacing="0" cellpadding="6">
+		<tr>
+			<th>Name</th>
+			<th>Job</th>
+			<th>Department</th>
+			<th>Salary</th>
+		</tr>
+		<tr>
+			<td>Aboubakr</td>
+			<td>Software Developer</td>
+			<td>Dp21</td>
+			<td>1700kr</td>
+		</tr>
+		<tr>
+			<td>Julia</td>
+			<td>Designer</td>
+			<td>Dp19</td>
+			<td>1500kr</td>
+		</tr>
+	</table>
+
+
+
+
+	<br>
+		<h2 style="color: brown;"> Table Captions - caption  </h2>
+	<br>
+
+
+	<!-- What is the <caption> Element?
+		Definition:
+		
+		The <caption> tag is used to define a caption (title or summary) for a table and is inserted immediately after the <table> tag. 
+		It helps users understand the context and content of the table at a glance. 
+	-->
+
+
+	<table style="width:50%;" border="1px">
+        <caption style="color: rgba(219, 94, 27, 0.813);">Employee Attendance Record</caption>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Days Present</th>
+        </tr>
+        <tr>
+            <td>Alice Smith</td>
+            <td>Marketing</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Bob Johnson</td>
+            <td>IT</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+
+
+	<br>
+		<h2 style="color: brown;"> Table Spanning (rowspan and colspan)  </h2>
+	<br>
+
+
+	<p style="color: rgb(39, 34, 185);">Table With colspan and rowspan:</p>
+
+	<table border="1" width="50%" cellspacing="0" cellpadding="6">
+		<tr>
+			<th>Name</th>
+			<th>Job</th>
+			<th>Department</th>
+			<th>Country</th>
+			<th>Salary</th>
+		</tr>
+
+		<tr>
+			<td>Aboubakr</td>
+			<td>Software Devlopper</td>
+			<td>IT</td>
+			<td rowspan="2">Sweden</td> 
+			<td>1700kr</td>
+		</tr>
+		<tr>
+			<td>Julia</td>
+			<td>UX</td>
+			<td rowspan="2">Design</td>
+			<!-- the Country -Sweden- is covered above  -->
+			<td>1500kr</td>
+		</tr>
+		<tr>
+			<td>Karla</td>
+			<td>UI</td>
+			<!-- the Design is covered above  -->
+			<td>Norway</td>
+			<td>1400kr</td>
+
+		</tr>
+
+		<!-- Total -->
+
+		<tr>
+			<td colspan="4" align="right"> <b>Total</b> </td>
+			<!-- the total mereged in 4 columns  -->
+			<td> <b>4,600kr</b></td>
+		</tr>
+
+
+	</table>
+
+
+
+	<br>
+		<h2 style="color: brown;"> Table Footer </h2>
+	<br>
+
+
+
+	<p style="color: rgb(39, 34, 185);">Table Footer :</p>
+
+
+
+
+<!-- 
+	What is the <tfoot> Element?
+		Definition:
+		
+		The <tfoot> tag is part of the table structure that specifically holds the footer content of a table. 
+			It should be used to group footer content in a table that is not part of the main body of table data (<tbody>). -->
+
+	
+	<table border="1" width="50%" cellspacing="0" cellpadding="6">
+		
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Department</th>
+				<th>Country</th>
+				<th>Salary</th>
+			</tr>
+		</thead>
+		        <!-- While <tfoot> should logically follow <tbody> in presentation, 
+					it is often placed before <tbody> in the markup to allow browsers to render footers more quickly. -->
+		<tfoot>
+			<tr>
+				<td colspan="3" align="right"><b>Total</b></td>
+				<td>$105,000</td>
+			</tr>
+		</tfoot>
+
+		<tbody>
+			<tr>
+                <td>Alice Smith</td>
+                <td>Marketing</td>
+				<td rowspan="2">united kingdom</td>
+                <td>$50,000</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>IT</td>
+                <td>$55,000</td>
+            </tr>
+		</tbody>
+
+	</table>
+
+
+</body>
+</html>
