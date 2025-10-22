@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> method Attribute in HTML Forms </title>
+</head>
+<body>
+	<div>
+		<h3 style="color: blue;"> Using GET method </h3>
+		<br>
+		<form action="FrontEnd.html" method="get">
+			<label for="query">search</label>
+			<input type="text" name="query" id="query">
+			<button type="submit">Search</button>
+		</form>
+	</div>
+	<div>
+
+		<!-- What's not working:
+		Static files (like .html) cannot handle POST requests unless they're served by a backend (e.g., PHP, Node.js, Python Flask, etc.). -->
+
+		<h3 style="color: blue;"> Using POST method </h3>
+		<br>
+		<form action="Backend.js" method="post">
+			<label for="username">Username: </label>
+			<input type="text" name="username" id="username">
+			<label for="password">password: </label>
+			<input type="text" name="password" id="password">
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+<!-- 
+
+The method attribute of an HTML form dictates how the browser sends the form data to the server. 
+	It determines whether to use GET or POST, the two most commonly used HTTP methods for sending form data.
+
+	The HTTP Methods
+		GET:
+			Description: Data is appended to the URL as a query string and visible to anyone. 
+				It has a length limitation and should not be used for sensitive information.
+			Use Cases: Suitable for form submissions where the data does not include sensitive information, 
+				such as search filters or query parameters.
+
+
+		POST:
+			Description: Data is sent through the HTTP header, so the information is not displayed in the URL. 
+				This method allows sending large quantities of data and is secure for sensitive information.
+			Use Cases: Ideal for updating data, sending sensitive information (like passwords), 
+				and for any form that results in a change of state or data manipulation on the server.
+
+		
+		How does the POST method enhance the security of form data?
+			By including data in the request body, not the URL
+	 -->
+
+
